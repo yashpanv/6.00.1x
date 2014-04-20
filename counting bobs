@@ -1,0 +1,8 @@
+s = s.lower()
+no = 0
+p = 0
+while s.find('bob',p) !=  -1:
+                p = s.find('bob',p)
+                p += 1
+                no += 1
+print ("Number Of vowels: ",no)
