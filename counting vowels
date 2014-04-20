@@ -1,0 +1,7 @@
+
+vowels = ["a","e","i","o","u"]
+num_vowels = 0
+for z in  s:
+                if z in vowels:
+                                num_vowels += 1
+print ("Number Of vowels: ",num_vowels)
