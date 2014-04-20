@@ -1,0 +1,48 @@
+def laceStrings(s1, s2):
+    """
+    s1 and s2 are strings.
+
+    Returns a new str with elements of s1 and s2 interlaced,
+    beginning with s1. If strings are not of same length, 
+    then the extra elements should appear at the end.
+    """
+    # Your Code Here
+    a = list(s1)
+    b = list(s2)
+    s3 = []
+    i= 0
+    if len(a)>len(b):
+        for i in range(0,len(b)):
+            s3.append(a[i])
+            s3.append(b[i])
+            i+=1
+            ##                                s3.append(a[i:]
+    if len(b) > len(a):
+        for i in range(0,len(a)):
+            s3.append(a[i])
+            s3.append(b[i])
+            i += 1
+            ##                                s3.append(b[i:]
+    else:
+        if len(a)== len(b):
+            for i in range(0,len(b)):
+                s3.append(a[i])
+                s3.append(b[i])
+                i+=1
+                #print s3
+    if len(a) > len(b):
+        for q in range(i,len(a)):
+            s3.append(a[q])
+            q+=1
+    if len(b) > len(a):
+        for q in range(i,len(b)):
+            s3.append(b[q])
+            q+=1
+            ##                                s3.append(b[i:])
+    #print s3
+    z = ''.join(str(x) for x in s3)
+    #print s3
+    #print z
+    return z
+
+
